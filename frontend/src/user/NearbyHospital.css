@@ -1,0 +1,51 @@
+/* Custom red button for all actions and logout */
+.custom-red-btn {
+  background-color: #e57373 !important; /* little red */
+  color: #fff !important;
+  border: none !important;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.custom-red-btn:hover, .custom-red-btn:focus {
+  background-color: #d32f2f !important; /* medium red */
+  color: #fff !important;
+}
+.custom-red-btn:active {
+  background-color: #b71c1c !important; /* more red */
+  color: #fff !important;
+}
+/* Always keep buttons in a row, even on small screens */
+.hospital-action-row {
+  flex-wrap: wrap !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+
+/* Responsive action buttons for hospital cards */
+
+.responsive-action-btn {
+  margin-bottom: 0 !important;
+  width: auto !important;
+  min-width: 160px !important;
+  font-size: 16px !important;
+  transition: font-size 0.2s, padding 0.2s;
+}
+
+@media (max-width: 600px) {
+  .responsive-action-btn {
+    font-size: 13px !important;
+    min-width: 100px !important;
+    padding: 4px 8px !important;
+  }
+}
+
+/* Make only the button label text smaller */
+.responsive-action-btn .btn-label {
+  font-size: 12px !important;
+}
+@media (max-width: 600px) {
+  .responsive-action-btn .btn-label {
+    font-size: 9px !important;
+  }
+}

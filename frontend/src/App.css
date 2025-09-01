@@ -1,0 +1,27 @@
+/* Navigation tab hover and active styles */
+.custom-nav-link {
+	transition: background 0.2s, font-size 0.2s, color 0.2s;
+	font-size: 1rem;
+}
+.custom-nav-link:hover {
+	background-color: #ffb3b3 !important;
+	color: #fff !important;
+	font-size: 1.15rem;
+}
+.bg-red-deep.custom-nav-link,
+.custom-nav-link.active {
+	background-color: #c1121f !important;
+	color: #fff !important;
+	font-size: 1.15rem;
+}
+/* Custom deep red for active nav tab */
+.bg-red-deep {
+	background-color: #c1121f !important;
+}
+/* Sticky nav bar background */
+.sticky-nav {
+	background-color: #fff !important;
+	box-shadow: none;
+	border-bottom: none;
+	padding: 0.5rem 0;
+}
