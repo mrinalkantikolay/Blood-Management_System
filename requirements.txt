@@ -1,45 +1,22 @@
-# This project uses Node.js (backend and frontend).
-# Dependencies are managed by package.json files in `backend/` and `frontend/`.
-# The following lists the main runtime dependencies (name@version). To install, run the two commands below.
+# Blood Management System — dependency & install helper
 
-# Backend (install inside backend/)
-# bcrypt@^6.0.0
-# bcryptjs@^3.0.2
-# cors@^2.8.5
-# dotenv@^17.2.1
-# express@^4.21.2
-# express-rate-limit@^6.7.0
-# express-validator@^7.2.1
-# helmet@^8.1.0
-# jsonwebtoken@^9.0.0
-# mysql@^2.18.1
-# mysql2@^3.14.3
+# Node version
+# Recommended: Node.js v16 or newer
 
-# Frontend (install inside frontend/)
-# @popperjs/core@^2.11.8
-# @reduxjs/toolkit@^2.8.2
-# axios@^1.4.0
-# bootstrap@^5.2.3
-# formik@^2.2.9
-# leaflet@^1.9.4
-# react@^18.2.0
-# react-bootstrap@^2.7.4
-# react-bootstrap-icons@^1.10.3
-# react-dom@^18.2.0
-# react-icons@^5.5.0
-# react-leaflet@^4.2.1
-# react-redux@^8.0.5
-# react-router-dom@^6.11.1
-# react-scripts@5.0.1
-# redux@^5.0.1
-# web-vitals@^2.1.4
-# yup@^1.7.0
+# Install backend dependencies and start
+cd backend
+npm install
 
-# Install commands
-# From project root:
-# cd backend && npm install
-# cd ../frontend && npm install
+# Configure backend env: copy/backend/.env.example -> backend/.env and set DB credentials
 
-# Note: This is a helper file for reference. The canonical dependency manifests are:
-# - backend/package.json
-# - frontend/package.json
+# Run backend
+npm start
+
+# Install frontend dependencies and start (in a separate terminal)
+cd ../frontend
+npm install
+npm start
+
+# Notes
+# - This project uses npm and package.json files in `backend/` and `frontend/` as the canonical manifests.
+# - If you plan to store large uploaded files, consider enabling Git LFS for `backend/uploads/`.

@@ -8,62 +8,60 @@ A full-stack web application for managing blood donations, requests, and hospita
 - Blood donation and request management
 - Hospital and donor management
 - Bring Blood Requests and tracking
+## Blood Management System
+
+A full-stack web application for managing blood donations, requests, and hospital operations. The project includes a React frontend and a Node.js/Express backend with a MySQL database.
+
+## Features
+- User registration, login, and authentication
+- Staff and admin dashboards
+- Blood donation and request management
+- Hospital and donor management
+- Bring Blood Requests and tracking
 - Responsive UI with Bootstrap
 
 ## Project structure
 
 ```
 backend/
-  server.js           # Express server
-  package.json        # Backend dependencies
-  config/             # DB configuration
-  controllers/        # Route controllers
-  middleware/         # Auth and error handlers
-  routes/             # API routes
-  sql/                # SQL schema and seed files
+	server.js           # Express server
+	package.json        # Backend dependencies
+	config/             # DB configuration
+	controllers/        # Route controllers
+	middleware/         # Auth and error handlers
+	routes/             # API routes
+	sql/                # SQL schema and seed files
 
 frontend/
-  package.json        # Frontend dependencies
-  public/             # Static assets
-  src/                # React source
+	package.json        # Frontend dependencies
+	public/             # Static assets
+	src/                # React source
 ```
 
 ## Getting started
 
 ### Prerequisites
-- Node.js (v16+ recommended)
-- npm
+- Node.js (v16 or newer recommended)
+- npm (comes with Node.js)
 - MySQL
 
 ### Backend setup
-1. Navigate to the `backend` folder:
-	```sh
-	cd backend
-	```
-2. Install dependencies:
-	```sh
-	npm install
-	```
-3. Configure your MySQL database in `config/db.js` and create a `.env` file (use `backend/.env.example` as a template).
-4. Run the SQL scripts in `sql/schema.sql` and `sql/seed.sql` to set up the database.
-5. Start the backend server:
-	```sh
-	npm start
-	```
+1. From project root, install backend dependencies and start the server:
+	 ```sh
+	 cd backend
+	 npm install
+	 npm start
+	 ```
+2. Configure your MySQL database in `config/db.js` and create a `.env` file (use `backend/.env.example` as a template).
+3. Run the SQL scripts in `sql/schema.sql` and `sql/seed.sql` to set up the database.
 
 ### Frontend setup
-1. Navigate to the `frontend` folder:
-	```sh
-	cd frontend
-	```
-2. Install dependencies:
-	```sh
-	npm install
-	```
-3. Start the frontend development server:
-	```sh
-	npm start
-	```
+1. From project root, install frontend dependencies and start the dev server:
+	 ```sh
+	 cd frontend
+	 npm install
+	 npm start
+	 ```
 
 ### Accessing the app
 - Frontend: http://localhost:3000
